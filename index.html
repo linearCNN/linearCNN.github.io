@@ -6,8 +6,6 @@
 
 <h3><span style="font-size:13.999999999999998pt"><span style="font-family:Arial"><span style="color:#434343">experimental setup:</span></span></span></h3>
 
-<p>&nbsp;</p>
-
 <p><span style="font-size:11pt"><span style="font-family:Arial"><span style="color:#000000">zero-padding</span></span></span><br />
 <span style="font-size:11pt"><span style="font-family:Arial"><span style="color:#000000">he-uniform initializer * 0.1 (different dynamics for different initializers!)</span></span></span></p>
 
@@ -27,11 +25,19 @@
   
 
 <h3><span style="font-size:13.999999999999998pt"><span style="font-family:Arial"><span style="color:#434343"> Evolution of the train and test MSE loss on CIFAR-10 </span></span></span></h3>
-<p><span style="font-size:11pt"><span style="font-family:Arial"><span style="color:#000000">averaged over 3 trials</span></span></span><br />
+
   
 <img src="averaged_loss_train.png" alt="averaged_loss_train" class="inline" style="width: 55vw; min-width: 330px;"/>
  
 <img src="averaged_loss_test.png" alt="averaged_loss_test" class="inline" style="width: 55vw; min-width: 330px;"/>
+  
+<p><span style="font-size:11pt"><span style="font-family:Arial"><span style="color:#000000">Averaged over 3 trials.  </span></span></span><br /> 
+   
+<p><span style="font-size:11pt"><span style="font-family:Arial"><span style="color:#000000">The high variance in the test loss curve stems from the fact that we evaluated it on a subset of the complete test set (to update). </span></span></span><br />
+ 
+ <p><span style="font-size:11pt"><span style="font-family:Arial"><span style="color:#000000">Note that overfitting starts around batch 40000.</span></span></span><br />
+  
+  
   
  <h3><span style="font-size:13.999999999999998pt"><span style="font-family:Arial"><span style="color:#434343"> Evolution of the effective singular values </span></span></span></h3>
 
